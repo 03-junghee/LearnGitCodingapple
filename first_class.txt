@@ -1,0 +1,67 @@
+<WHY WE LEARN ABOUT GIT AND GITHUB?>
+
+- save and read the previously modified works.
+- work with other people to solve the problem.
+- etc...
+
+<WHEN YOU USE GIT AND GITHUB FIRST...>
+
+1. make a folder.
+2. open the PowerShell in the folder(right click to the folder and open the PowerShell).
+3. write the two sentences at the bottom.
+- git config --global user.email "UserEmail"
+- git config --global user.name "UserName"
+Ex) git config --global user.email "03_junghee@naver.com"
+    git config --global user.name "03_junghee"
+
+<LET'S USE THE GIT!>
+
+1. open the folder in the editor(Visual Studio Code).
+2. open the New Terminal(Terminal -> New Terminal or Ctrl + Shift + `).
+3. write "git init" in the Terminal.
+
+<If YOU WANT TO RECORD OR MODIFY THE FILE...>
+
+1. write "git add FileName" in the Terminal.
+2. write "git commit -m 'memo'".
+Ex) git add app.txt
+    git commit -m 'this is my first file.'
+
+<WHAT IS THE STAGING AREA AND REPOSITORY?>
+
+STAGING AREA
+- staging area is where you select files to commit before committing.
+- staging is an act of putting files on the staging area.
+- you can stage by using the command "git add".
+
+REPOSITORY
+- repository is where you collect the versions of the committed file.
+- you can see the repository in the .git folder. 
+
+(if you look at the staging area and repository.png, you can understand it in more detail.)
+
+<MORE COMMANDS...>
+
+- if you want to stag lots of files...
+    -> git add FileName1 FileName2 ...
+    Ex) git add app.txt abc.txt ...
+
+- if you want to stag all files...
+    -> git add .
+
+- if you want to see the status...
+    -> git status
+
+- if you want to cancel the staging file...
+    -> git restore --staged FileName
+    Ex) git restore --staged app.txt
+
+- if you want to see the commit record at a glance...
+    -> git log --all --oneline
+    (if you want to see this as a graph...)
+    -> git log --all --oneline --graph
+
+<HOW OFTEN SHOULD WE COMMIT?>
+
+- you don't have to commit habitually like pressing Ctrl + S.
+- commit every time you add a simple feature.
