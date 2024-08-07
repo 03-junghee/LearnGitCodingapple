@@ -1,0 +1,38 @@
+<HOW TO DO GIT COMMIT WITHOUT COMMANDS?>
+
+1. Click Source Control or Ctrl + Shift + G.
+2. If you click plus button, you can do git add.
+3. If you click minus button, you can cancel git add.
+4. If you click check button, you can do git commit.
+5. If you want to save message, you can write in Message box or Ctrl + Enter.
+
+<WHAT IS GIT DIFF?>
+
+- You can compare the difference between the previous code and the currunt code.
+- You can control scroll bar by pressing j and k key.
+- If you want to quit, press q key.
+
+<WHAT IS GIT DIFFTOOL?>
+
+- Git diff has many drawbacks. So, many users use git difftool.
+- Git difftool compares the difference between the previous code and the currunt code in Vim.
+- You can control scrool bar by pressing h, j, k, l key.
+- If you want to quit, pres :q or :qa.
+
+- If you want to compare the difference between the particular code and the currunt code...
+    -> git difftool CommitId
+    Ex) git difftool 7ed6a66
+
+- If you want to compare certain codes...
+    -> git difftool CommitId1 CommitId2
+    Ex) git difftool 7ed6a66 a91bc66
+
+(If you look at the commit id.png, you can understand it in more detail.)
+
+- If you write the sentence at the bottom in cmd, you can open the git difftool in VSCode instead of Vim.
+    -> git config --global diff.tool vscode
+    -> git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+
+- If you want to use git diff easily, download the Git History or Git Graph in Extentions(Ctrl + Shift + X).
+
+(If you look at the git graph.png, you can understand it in more detail.)
