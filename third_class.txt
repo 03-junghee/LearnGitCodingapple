@@ -1,0 +1,42 @@
+<WHAT IS BRANCH?>
+
+- Branch is the copy of project.
+- If you want to make some function on project, make branch to save our project.
+
+(If you look at the before branch.png and after branch.png, you can understand it in more detail.)
+
+<HOW TO USE BRANCH?>
+
+- If you want to make branch...
+    -> git branch BranchName
+    Ex) git branch coupon
+
+- If you want to switch branch...
+    -> git switch BranchName
+    Ex) git switch coupon
+
+(The first branch is the main or master branch.)
+
+(If you look at the main and coupon branch.png, you can understand it in more detail.)
+
+- If you want to see the current branch status...
+    -> git log --onelin --all --graph
+
+(HEAD means the branch where you currently in)
+
+(If you look at the branch status.png, you can understand it in more detail.)
+
+<HOW TO MERGE THE BRANCHS?>
+
+- If you want to merge the branchs...
+    -> git switch BranchName1
+    -> git merge BranchName2
+    Ex) git swtich main
+        git merge coupon
+
+(BranchName2 is incorporated into BranchName1.)
+
+(If you look at the branch merge.png, you can understand it in more detail.)
+
+- If you modify the same line with the same file in both branchs, merge conflict occurs.
+    -> If merge conflict occurs, you have to do git add and git commit after choosing between the two.
