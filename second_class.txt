@@ -8,18 +8,18 @@
 
 <WHAT IS GIT DIFF?>
 
-- You can compare the difference between the previous code and the currunt code.
+- You can compare the difference between the previous code and the current code.
 - You can control scroll bar by pressing j and k key.
 - If you want to quit, press q key.
 
 <WHAT IS GIT DIFFTOOL?>
 
 - Git diff has many drawbacks. So, many users use git difftool.
-- Git difftool compares the difference between the previous code and the currunt code in Vim.
+- Git difftool compares the difference between the previous code and the current code in Vim.
 - You can control scrool bar by pressing h, j, k, l key.
 - If you want to quit, pres :q or :qa.
 
-- If you want to compare the difference between the particular code and the currunt code...
+- If you want to compare the difference between the particular code and the current code...
     -> git difftool CommitId
     Ex) git difftool 7ed6a66
 
